@@ -5,7 +5,7 @@ import PaginaEjercicio from "./paginas/PaginaEjercicio";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/EjerciciosReact" >
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ejercicio/:id" element={<PaginaEjercicio />} />
