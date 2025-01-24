@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04  # Cambiado para evitar problemas con Ubuntu 24.04
     steps:
       - name: Clonar el repositorio
         uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
           path: dist
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04  # Cambiado para evitar problemas con Ubuntu 24.04
     needs: build
     environment:
       name: github-pages
