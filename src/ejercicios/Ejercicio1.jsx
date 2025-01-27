@@ -22,6 +22,8 @@ function Ejercicio1() {
                     type="text" 
                     ref={nombreRef} 
                     placeholder="Tu nombre aquí..." 
+                    required
+                    autoFocus
                 />
                 <button 
                     onClick={procesar}
